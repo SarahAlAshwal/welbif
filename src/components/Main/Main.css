@@ -1,0 +1,18 @@
+.welcome {
+  color: #0061a5;
+  animation: 3s 1 alternate slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 50%;
+  }
+
+  75% {
+    font-size: 150%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}

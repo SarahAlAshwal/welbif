@@ -1,0 +1,29 @@
+.header {
+  padding: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header-button {
+  background-color: #fff;
+  border: none;
+  color: #00abdc;
+  padding: 5px 40px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.header-button:hover {
+  background-color: #00abdc;
+  color: white;
+  box-shadow: 0 4px #968b8b;
+}
+
+.company-name {
+  color: #0061a5;
+}
