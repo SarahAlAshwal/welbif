@@ -3,7 +3,7 @@ import { useGlobalContext } from '../../GlobalContext';
 
 export default function Header() {
   const { choice, setChoice } = useGlobalContext();
-  console.log('xxxxx', choice);
+
   return (
     <div className="header">
       <h2 className="company-name">welbi</h2>

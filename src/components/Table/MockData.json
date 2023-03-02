@@ -1,0 +1,282 @@
+[
+  {
+    "userId": "7a94c370-bf1a-473d-a3b5-6f78306b718f",
+    "name": "Arthur Yost",
+    "gender": "Male",
+    "birthday": "1941-02-17T18:50:57.918Z",
+    "moveInDate": "2003-11-29T01:16:33.550Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Family",
+    "roomNumber": "922"
+  },
+  {
+    "userId": "cefa85b4-b023-446c-84a8-99c71ae02a7e",
+    "name": "Melvin Boyle",
+    "gender": "Male",
+    "birthday": "1924-12-08T06:37:07.232Z",
+    "moveInDate": "2013-01-19T13:38:20.530Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Bridge",
+    "roomNumber": "637"
+  },
+  {
+    "userId": "0b1a0ce9-d6c2-4d88-8fd4-100817472596",
+    "name": "Brittany Dietrich",
+    "gender": "Female",
+    "birthday": "1916-01-26T05:01:29.114Z",
+    "moveInDate": "1984-09-24T04:13:10.853Z",
+    "levelOfCare": null,
+    "hobbies": null,
+    "roomNumber": "193"
+  },
+  {
+    "userId": "2096a0c3-5151-4c13-8379-29b52d571060",
+    "name": "Kelly Crooks",
+    "gender": "Female",
+    "birthday": "1937-02-24T09:36:06.544Z",
+    "moveInDate": "2015-06-01T20:48:37.376Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": null,
+    "roomNumber": "466"
+  },
+  {
+    "userId": "d5855fd7-5bcd-44ec-8413-850c866d17ef",
+    "name": "Brandy McGlynn",
+    "gender": "Female",
+    "birthday": "1943-05-26T09:08:45.568Z",
+    "moveInDate": "2015-10-10T15:27:51.570Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": null,
+    "roomNumber": "518"
+  },
+  {
+    "userId": "cfb49256-1450-4ce9-bd3f-6a17dcc23ab6",
+    "name": "Randal Rau",
+    "gender": "Male",
+    "birthday": "1955-01-28T14:00:48.225Z",
+    "moveInDate": "2016-08-13T03:24:32.659Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Bridge,Card games,Crossword puzzles,Socializing",
+    "roomNumber": "544"
+  },
+  {
+    "userId": "83b7aea9-7517-48ce-b675-ba5fa0aefded",
+    "name": "Terence Wolff",
+    "gender": "Male",
+    "birthday": "1958-02-05T02:53:07.308Z",
+    "moveInDate": "2018-08-27T22:43:57.853Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": null,
+    "roomNumber": "519"
+  },
+  {
+    "userId": "20665271-edcd-4b02-b27b-a20ae2c8068c",
+    "name": "Doug Gibson",
+    "gender": "Male",
+    "birthday": "1943-06-23T17:15:24.283Z",
+    "moveInDate": "2014-06-26T15:18:49.216Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Crossword puzzles,Reading",
+    "roomNumber": "563"
+  },
+  {
+    "userId": "ae83b7ed-8394-45b4-9a55-7d0651a849d3",
+    "name": "Edgar Carroll",
+    "gender": "Male",
+    "birthday": "1952-01-25T00:11:05.346Z",
+    "moveInDate": "2018-04-14T03:41:36.496Z",
+    "levelOfCare": "Long Term Care",
+    "hobbies": null,
+    "roomNumber": "460"
+  },
+  {
+    "userId": "cbd0faf2-27f4-45a7-82ab-17b5932cdc33",
+    "name": "Constance Hand",
+    "gender": "Female",
+    "birthday": "1942-10-21T04:19:16.153Z",
+    "moveInDate": "2005-07-22T17:27:08.670Z",
+    "levelOfCare": "Long Term Care",
+    "hobbies": "Music",
+    "roomNumber": "162"
+  },
+  {
+    "userId": "f8bf9534-7f9b-4d0b-b99e-c78e53773b90",
+    "name": "Robert Lehner",
+    "gender": "Male",
+    "birthday": "1915-03-22T21:52:47.603Z",
+    "moveInDate": "1992-12-17T03:52:52.113Z",
+    "levelOfCare": "Memory Care",
+    "hobbies": "Music,Reading",
+    "roomNumber": "198"
+  },
+  {
+    "userId": "a3a602e1-54fb-4833-a33a-e98fe503bc93",
+    "name": "Gretchen Torp",
+    "gender": "Female",
+    "birthday": "1925-06-03T11:05:18.734Z",
+    "moveInDate": "2009-12-01T05:27:43.468Z",
+    "levelOfCare": "Independent",
+    "hobbies": null,
+    "roomNumber": "365"
+  },
+  {
+    "userId": "a286df24-0395-48bd-9aa6-6326149a58d1",
+    "name": "Willis Emard",
+    "gender": "Male",
+    "birthday": "1956-02-27T16:48:33.395Z",
+    "moveInDate": "2022-07-27T17:48:03.805Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Card games,Socializing,Watching television,Word search",
+    "roomNumber": "512"
+  },
+  {
+    "userId": "bf3cddaf-e221-4b5c-9485-65b5ab04fcd6",
+    "name": "Terri Wolff",
+    "gender": "Male",
+    "birthday": "1953-12-26T02:18:23.423Z",
+    "moveInDate": "2012-05-13T09:22:01.941Z",
+    "levelOfCare": "Long Term Care",
+    "hobbies": "Drawing,Gardening,Reading,Singing,Swimming",
+    "roomNumber": "713"
+  },
+  {
+    "userId": "785e5987-9aaa-41bb-801d-3e585ab26fbe",
+    "name": "John Kuhic",
+    "gender": "Male",
+    "birthday": "1924-04-05T02:47:01.787Z",
+    "moveInDate": "2000-12-10T06:55:29.029Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": null,
+    "roomNumber": "330"
+  },
+  {
+    "userId": "5f4a547c-4110-42e0-84dd-c3b49bb40ea9",
+    "name": "Kate Becker",
+    "gender": "Female",
+    "birthday": "1958-10-03T05:42:59.152Z",
+    "moveInDate": "2020-01-27T17:39:13.704Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": null,
+    "roomNumber": "917"
+  },
+  {
+    "userId": "c4f451f3-7f6f-4452-850f-4407c169281f",
+    "name": "Rick Vandervort",
+    "gender": "Other",
+    "birthday": "1920-09-17T06:58:25.743Z",
+    "moveInDate": "2011-05-26T15:38:34.789Z",
+    "levelOfCare": "Long Term Care",
+    "hobbies": null,
+    "roomNumber": "707"
+  },
+  {
+    "userId": "46788a70-ab0a-4581-9813-e820217660d7",
+    "name": "Sean Schmitt",
+    "gender": "Male",
+    "birthday": "1922-04-27T06:28:57.289Z",
+    "moveInDate": "1992-12-11T20:23:55.718Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Sudoku",
+    "roomNumber": "181"
+  },
+  {
+    "userId": "c1555dfc-e55a-42ed-94b6-564f60eb7797",
+    "name": "Tammy Marquardt",
+    "gender": "Female",
+    "birthday": "1920-07-17T12:30:08.658Z",
+    "moveInDate": "2008-06-04T03:52:07.503Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Crocheting,Cross-stitch,Family,Gardening,Reading,Sewing,Watching television",
+    "roomNumber": "781"
+  },
+  {
+    "userId": "c69626ea-d1a6-4897-affb-8e12abab9350",
+    "name": "Hugo Kiehn",
+    "gender": "Male",
+    "birthday": "1929-06-27T00:05:50.552Z",
+    "moveInDate": "1995-01-27T08:41:21.657Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "News,Woodworking",
+    "roomNumber": "145"
+  },
+  {
+    "userId": "305d7de7-7325-4286-99dc-bc2dd87fa34d",
+    "name": "Joann Klocko",
+    "gender": "Female",
+    "birthday": "1949-08-16T13:02:59.904Z",
+    "moveInDate": "2014-10-26T23:55:41.519Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Gardening,Poetry,Walking",
+    "roomNumber": "544"
+  },
+  {
+    "userId": "75f049a5-223d-4ca9-b9ac-3391cbc1b3a5",
+    "name": "Gina Raynor",
+    "gender": "Female",
+    "birthday": "1950-10-22T15:12:42.316Z",
+    "moveInDate": "2022-06-01T12:59:30.891Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": null,
+    "roomNumber": "300"
+  },
+  {
+    "userId": "a3289725-0ca3-489d-a9ec-b5d8cd4bacb4",
+    "name": "Leonard Aufderhar",
+    "gender": "Male",
+    "birthday": "1923-11-02T02:32:32.439Z",
+    "moveInDate": "2016-12-17T08:09:44.424Z",
+    "levelOfCare": "Independent",
+    "hobbies": null,
+    "roomNumber": "870"
+  },
+  {
+    "userId": "d2089498-4b41-4ab6-86f5-2559bcd70ac6",
+    "name": "Lynette Wolf",
+    "gender": "Female",
+    "birthday": "1959-01-21T19:25:12.563Z",
+    "moveInDate": "2019-01-29T01:53:42.943Z",
+    "levelOfCare": "Independent",
+    "hobbies": "Bowling,Knitting,Wii",
+    "roomNumber": "466"
+  },
+  {
+    "userId": "0dc76f56-7be8-4b11-8a51-4a74716e76f0",
+    "name": "Guillermo Bins",
+    "gender": "Male",
+    "birthday": "1929-04-03T17:12:03.429Z",
+    "moveInDate": "2003-01-22T16:35:20.116Z",
+    "levelOfCare": "Independent",
+    "hobbies": null,
+    "roomNumber": "023"
+  },
+  {
+    "userId": "7c5b13e2-1923-480a-9223-58c225db9977",
+    "name": "Evelyn Lehner",
+    "gender": "Female",
+    "birthday": "1944-02-22T10:18:18.977Z",
+    "moveInDate": "2018-03-12T20:23:33.317Z",
+    "levelOfCare": "Independent",
+    "hobbies": null,
+    "roomNumber": "234"
+  },
+  {
+    "userId": "27e1cd51-d15f-4f24-b689-266af6e00a11",
+    "name": "Miguel Harris",
+    "gender": "Male",
+    "birthday": "1930-06-08T17:58:45.931Z",
+    "moveInDate": "2013-01-10T05:01:01.906Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": "Games,Socializing",
+    "roomNumber": "428"
+  },
+  {
+    "userId": "fd7349a6-e955-4a46-b860-2be8bf2ed9ab",
+    "name": "Gerald Strosin",
+    "gender": "Male",
+    "birthday": "1922-10-23T10:47:42.272Z",
+    "moveInDate": "2015-11-10T09:16:08.855Z",
+    "levelOfCare": "Assisted Living",
+    "hobbies": null,
+    "roomNumber": "169"
+  }
+]
