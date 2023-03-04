@@ -1,53 +1,34 @@
 import { ColumnDef } from '@tanstack/react-table';
 import { useMemo } from 'react';
-import MockData from '../Table/MockData.json';
 import { Table } from '../Table/Table';
-
-type Resident = {
-  userId: string;
-  name: string;
-  gender: string;
-  birthday: string;
-  moveInDate: string;
-  levelOfCare: string | null;
-  hobbies: string | null;
-  roomNumber: string;
-};
+import { useGlobalContext } from '../../GlobalContext';
+import { Resident } from '../../types';
 
 export default function Residents() {
-  const MyData: Array<Resident> = MockData.map((resident) => {
-    return {
-      userId: resident.userId,
-      name: resident.name,
-      gender: resident.gender,
-      birthday: new Date(Date.parse(resident.birthday)).toDateString(),
-      moveInDate: new Date(Date.parse(resident.moveInDate)).toDateString(),
-      levelOfCare: resident.levelOfCare === null ? '-' : resident.levelOfCare,
-      hobbies: resident.hobbies === null ? '-' : resident.hobbies,
-      roomNumber: resident.roomNumber,
-    };
-  });
+  const { residents } = useGlobalContext();
+  // const [data, setData] = useState(Array<Resident>);
+  // const [isLoading, setIsLoading] = useState(true);
 
   const cols = useMemo<ColumnDef<Resident>[]>(
     () => [
       {
-        header: 'Name',
+        header: 'First Name',
         cell: (row) => row.renderValue(),
-        accessorKey: 'name',
+        accessorKey: 'firstName',
       },
       {
-        header: 'Gender',
+        header: 'Last Name',
         cell: (row) => row.renderValue(),
-        accessorKey: 'gender',
+        accessorKey: 'lastName',
       },
       {
         header: 'Birthday',
-        cell: (row) => row.renderValue(),
-        accessorKey: 'birthday',
+        cell: (cell) => new Date(cell.row.original.birthDate).toDateString(),
+        accessorKey: 'birthDate',
       },
       {
         header: 'Move in Date',
-        cell: (row) => row.renderValue(),
+        cell: (cell) => new Date(cell.row.original.moveInDate).toDateString(),
         accessorKey: 'moveInDate',
       },
       {
@@ -56,14 +37,14 @@ export default function Residents() {
         accessorKey: 'levelOfCare',
       },
       {
-        header: 'Hobbies',
+        header: 'Ambulation',
         cell: (row) => row.renderValue(),
-        accessorKey: 'hobbies',
+        accessorKey: 'ambulation',
       },
       {
         header: 'Room Number',
         cell: (row) => row.renderValue(),
-        accessorKey: 'roomNumber',
+        accessorKey: 'room',
       },
     ],
     []
@@ -71,7 +52,7 @@ export default function Residents() {
 
   return (
     <div>
-      <Table data={MyData} columns={cols} />
+      <Table data={residents} columns={cols} />
     </div>
   );
 }

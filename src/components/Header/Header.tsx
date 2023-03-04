@@ -2,7 +2,7 @@ import './Header.css';
 import { useGlobalContext } from '../../GlobalContext';
 
 export default function Header() {
-  const { choice, setChoice } = useGlobalContext();
+  const { setChoice } = useGlobalContext();
 
   return (
     <div className="header">
