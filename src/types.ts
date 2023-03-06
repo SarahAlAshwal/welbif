@@ -23,15 +23,38 @@ export type Program = {
     byMonth: number;
     byMonthday: number;
     frequency: string;
-    interval: 1;
+    interval: number;
   };
   start: string;
   tags: Array<string>;
   updatedAt: string;
 };
 
+export type ProgramCreateInput = {
+  allDay: boolean;
+  name: string;
+  createdAt: string;
+  dimension: string;
+  end: string;
+  isRepeated: boolean;
+  location: string;
+  start: string;
+  hobbies: Array<string>;
+  facilitators: Array<string>;
+};
+
 export type Resident = {
-  id: number;
+  id: number | null;
+  firstName: string;
+  lastName: string;
+  birthDate: string;
+  moveInDate: string;
+  levelOfCare: string | null;
+  ambulation: string;
+  room: string;
+};
+
+export type ResidentCreateInput = {
   firstName: string;
   lastName: string;
   birthDate: string;

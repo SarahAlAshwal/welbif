@@ -2,6 +2,8 @@ import './Main.css';
 import { useGlobalContext } from '../../GlobalContext';
 import Residents from '../Residents/Residents';
 import Programs from '../Programs/Programs';
+import AddResident from '../AddResident/AddResident';
+import AddProgram from '../AddProgram/AddProgram';
 
 export default function Main() {
   const { choice } = useGlobalContext();
@@ -14,8 +16,8 @@ export default function Main() {
       )}
       {choice === 'residents' && <Residents />}
       {choice === 'programs' && <Programs />}
-      {choice === 'add resident' && <div>show add residents</div>}
-      {choice === 'assign to programs' && <div>show assign to programs</div>}
+      {choice === 'add resident' && <AddResident />}
+      {choice === 'assign to programs' && <AddProgram />}
     </>
   );
 }

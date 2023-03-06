@@ -23,7 +23,7 @@ export default function Header() {
         className="header-button"
         onClick={() => setChoice('assign to programs')}
       >
-        Assign To Programs
+        Add Program
       </button>
     </div>
   );

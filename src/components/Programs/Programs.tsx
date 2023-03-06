@@ -17,6 +17,7 @@ export default function Programs() {
     getPrograms(token)
       .then((res) => {
         setPrograms(res.data);
+        console.log(res.data);
       })
       .catch((error) => {
         console.error(error);
