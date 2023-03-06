@@ -1,28 +1,15 @@
 import { useEffect, useState, useMemo } from 'react';
 import { useGlobalContext } from '../../GlobalContext';
-import { getPrograms } from '../../Api';
-import { Program, ProgramWithAttendees } from '../../types';
+import { ProgramWithAttendees } from '../../types';
 import { showPrograms } from '../../util';
 import { Table } from '../Table/Table';
 import { ColumnDef } from '@tanstack/react-table';
 
 export default function Programs() {
-  const { token, residents } = useGlobalContext();
-  const [programs, setPrograms] = useState(Array<Program>);
+  const { residents, programs } = useGlobalContext();
   const [programsWithAttendees, setProgramsWithAttendess] = useState(
     Array<ProgramWithAttendees>
   );
-
-  useEffect(() => {
-    getPrograms(token)
-      .then((res) => {
-        setPrograms(res.data);
-        console.log(res.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
-  }, []);
 
   useEffect(() => {
     setProgramsWithAttendess(showPrograms(programs, residents));

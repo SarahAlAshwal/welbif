@@ -1,5 +1,5 @@
 import { createContext, useContext } from 'react';
-import { Resident } from './types';
+import { Program, Resident } from './types';
 
 export type GlobalContent = {
   choice: string;
@@ -7,6 +7,7 @@ export type GlobalContent = {
   token: string;
   setToken: (token: string) => void;
   residents: Array<Resident>;
+  programs: Array<Program>;
 };
 export const MyGlobalContext = createContext<GlobalContent>({
   choice: '',
@@ -14,5 +15,6 @@ export const MyGlobalContext = createContext<GlobalContent>({
   token: '',
   setToken: () => {},
   residents: [],
+  programs: [],
 });
 export const useGlobalContext = () => useContext(MyGlobalContext);

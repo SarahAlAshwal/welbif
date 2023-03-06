@@ -44,7 +44,7 @@ export type ProgramCreateInput = {
 };
 
 export type Resident = {
-  id: number | null;
+  id: number;
   firstName: string;
   lastName: string;
   birthDate: string;

@@ -4,13 +4,15 @@ import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import { MyGlobalContext } from './GlobalContext';
 import { start } from './Api';
-import { getResidents } from './Api';
-import { Resident } from './types';
+import { getResidents, getPrograms } from './Api';
+import { Resident, Program } from './types';
 
 function App() {
   const [choice, setChoice] = useState('');
   const [token, setToken] = useState('');
   const [residents, setResidents] = useState(Array<Resident>);
+  const [programs, setPrograms] = useState(Array<Program>);
+
   useEffect(() => {
     start()
       .then(function (response) {
@@ -22,20 +24,33 @@ function App() {
   }, []);
 
   useEffect(() => {
-    getResidents(token)
-      .then((res) => {
-        setResidents(res.data);
-      })
-      .catch((error) => {
-        console.error(error);
-      });
+    if (token) {
+      getResidents(token)
+        .then((res) => {
+          setResidents(res.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
   }, [token]);
 
-  //token:"77311ef8-86b9-4a32-80da-c8103c0b51b1"
+  useEffect(() => {
+    if (token) {
+      getPrograms(token)
+        .then((res) => {
+          setPrograms(res.data);
+          console.log(res.data);
+        })
+        .catch((error) => {
+          console.error(error);
+        });
+    }
+  }, [token]);
 
   return (
     <MyGlobalContext.Provider
-      value={{ choice, setChoice, token, setToken, residents }}
+      value={{ choice, setChoice, token, setToken, residents, programs }}
     >
       <div className="App">
         <Header />

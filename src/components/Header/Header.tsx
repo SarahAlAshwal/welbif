@@ -21,9 +21,15 @@ export default function Header() {
       </button>
       <button
         className="header-button"
-        onClick={() => setChoice('assign to programs')}
+        onClick={() => setChoice('add program')}
       >
         Add Program
+      </button>
+      <button
+        className="header-button"
+        onClick={() => setChoice('assign to programs')}
+      >
+        Assign Attendance
       </button>
     </div>
   );
