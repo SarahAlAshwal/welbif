@@ -21,7 +21,6 @@ export default function AddResident() {
   );
   async function addResidentCallback() {
     values.name = `${values.firstName} ${values.lastName}`;
-    console.log(values, token);
     postResident(token, values)
       .then((res) => {
         console.log(res.data);

@@ -5,6 +5,13 @@ import Programs from '../Programs/Programs';
 import AddResident from '../AddResident/AddResident';
 import AddProgram from '../AddProgram/AddProgram';
 import AssignAttendance from '../AssignAttendance/AssignAttendance';
+import {
+  ADD_PROGRAM,
+  ADD_RESIDENT,
+  ASSIGN_ATTENDEE,
+  PROGRAM,
+  RESIDENTS,
+} from '../../constants';
 
 export default function Main() {
   const { choice } = useGlobalContext();
@@ -15,11 +22,11 @@ export default function Main() {
           <h1>Welcome to welbi</h1>
         </div>
       )}
-      {choice === 'residents' && <Residents />}
-      {choice === 'programs' && <Programs />}
-      {choice === 'add resident' && <AddResident />}
-      {choice === 'add program' && <AddProgram />}
-      {choice === 'assign to programs' && <AssignAttendance />}
+      {choice === RESIDENTS && <Residents />}
+      {choice === PROGRAM && <Programs />}
+      {choice === ADD_RESIDENT && <AddResident />}
+      {choice === ADD_PROGRAM && <AddProgram />}
+      {choice === ASSIGN_ATTENDEE && <AssignAttendance />}
     </>
   );
 }

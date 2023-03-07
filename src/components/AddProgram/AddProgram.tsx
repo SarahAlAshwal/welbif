@@ -29,7 +29,6 @@ export default function AddProgram() {
     values.allDay = allDayCheckbox;
     values.isRepeated = repeatedCheckbox;
     values.createdAt = new Date();
-    console.log(values);
     postProgram(token, values)
       .then((res) => {
         console.log(res.data);
