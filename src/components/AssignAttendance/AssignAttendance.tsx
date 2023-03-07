@@ -28,11 +28,7 @@ export default function AssignAttendance() {
   );
 
   const handleSubmit = () => {
-    assignAttendee(token, {
-      programId: Number(program),
-      residentId: Number(attendee),
-      status,
-    })
+    assignAttendee(token, Number(program), Number(attendee), status)
       .then((res) => {
         console.log(res.data);
       })

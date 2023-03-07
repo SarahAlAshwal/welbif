@@ -35,7 +35,9 @@ export default function Programs() {
       {
         header: 'Attendees',
         cell: (cell) =>
-          cell.row.original.attendees.map((attendee) => <h5>{attendee}</h5>),
+          cell.row.original.attendees.map((attendee, index) => (
+            <h5 key={index}>{attendee}</h5>
+          )),
         accessorKey: 'attendees',
       },
     ],

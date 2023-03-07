@@ -1,5 +1,5 @@
 import axios from 'axios';
-import { Attendance, Resident } from '../types';
+import { Resident } from '../types';
 
 export const start = () =>
   axios.post('https://welbi.org/api/start', {
@@ -34,9 +34,22 @@ export const postProgram = (token: string, data: Resident) =>
     },
   });
 
-export const assignAttendee = (token: string, data: Attendance) =>
-  axios.post('https://welbi.org/api/programs/[programId]/attend', data, {
-    headers: {
-      Authorization: `Bearer ${token}`,
+export const assignAttendee = (
+  token: string,
+  program: number,
+  residentId: number,
+  status: string
+) =>
+  axios.post(
+    `https://welbi.org/api/programs/${program}/attend`,
+    {
+      programId: program,
+      residentId,
+      status,
     },
-  });
+    {
+      headers: {
+        Authorization: `Bearer ${token}`,
+      },
+    }
+  );
